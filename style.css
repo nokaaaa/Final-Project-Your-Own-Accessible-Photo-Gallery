@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#image {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: lightgray;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+.preview {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.2s;
+}
+
+.preview:hover,
+.preview:focus {
+    transform: scale(1.1);
+    border-color: #333;
+    outline: 2px solid #000;
+}
